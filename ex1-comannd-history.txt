@@ -1,0 +1,585 @@
+    1  mkdir CIT173_Lab4
+    2  ls
+    3  ls /dev
+    4  man ls
+    5  ls -a /dev
+    6  ls /dev > ~/CIT173_Lab4
+    7  ls -a /dev > ~/CIT173_Lab4/my-dev-nodes.txt
+    8  ls ~/CIT173_Lab4/my-dev-nodes.txt 
+    9  cat ~/CIT173_Lab4/my-dev-nodes.txt > /dev/full
+   10  head /dev/random > ~/CIT173_Lab4/my-random-data.txt
+   11  ls ~/CIT173_Lab4/my-random-data.txt 
+   12  ls -a ~/CIT173_Lab4/my-random-data.txt 
+   13  cat ~/CIT173_Lab4/my-random-data.txt 
+   14  ls kernel
+   15  ls
+   16  whoami
+   17  ls modinfo
+   18  modinfo
+   19  modinfo -a
+   20  modinfo ~/CIT173_Lab4/
+   21  modinfo CIT173_Lab4
+   22  lsmod
+   23  lsmod > ~/CIT173_Lab4/my-modules-1.txt
+   24  lsmod nfs
+   25  man modinfo
+   26  modinfo nfs
+   27  modinfo nfs > ~/CIT173_Lab4/my-nfs-info.txt
+   28  insmod nfs
+   29  lsmod
+   30  lsmod less
+   31  lsmod
+   32  modprobe nfs
+   33  /sbin/insmod nfs.ko
+   34  modinfo nfs
+   35  load nfs
+   36  apt install nfs
+   37  sudo apt install nfs
+   38  cd ..
+   39  install nfs
+   40  install --help
+   41  cd nfs
+   42  modinfo nfs
+   43  insmod /lib/modules/4.20.8-200.fc29.x86_64/kernel/fs/nfs/nfs.ko.xz
+   44  sudo insmod /lib/modules/4.20.8-200.fc29.x86_64/kernel/fs/nfs/nfs.ko.xz
+   45  cd ..
+   46  modprobe nfs-lib
+   47  cd ~/CIT173_Lab4/
+   48  lsmod nfs
+   49  modinfo nfs
+   50  quit
+   51  shutdown 
+   52  lsmod | grep nfs
+   53  modinfo nfs
+   54  modprobe nfs
+   55  sudo modprobe nfs
+   56  sudo modprobe nfs > ~/CIT173_Lab4/my-modules-2.txt
+   57  lsmod
+   58  ls
+   59  ls CIT173_Lab4
+   60  ls my-modules-2.txt
+   61  sudo modprobe -r nfs > ~/CIT173_Lab4/my-modules-3.txt
+   62  ls CIT173_Lab4
+   63  shutdown 
+   64  cd /
+   65  sudo cd /
+   66  fdisk /dev/sdb
+   67  cd ..
+   68  sudo fdisk /dev/sdb /dev/sdb1 /dev/sdb2
+   69  fdisk --help
+   70  fdisk(8)
+   71  man fdisk
+   72  fdisk -l /dev/sdb
+   73  sudo fdisk -l /dev/sdb
+   74  fdisk /dev/sdb
+   75  sudo fdisk /dev/sdb
+   76  sudo gdisk /dev/sdb
+   77  o
+   78  sudo gdisk /dev/sdb
+   79  ls /dev/
+   80  man ls
+   81  ls -l /dev > ~/CIT173_Lab4/my-new-dev-nodes.txt
+   82  ls -l /dev ~/CIT173_Lab4/my-new-dev-nodes.txt
+   83  man mkfs
+   84  mkfs /dev/sdb1
+   85  sudo mkfs /dev/sdb1
+   86  sudo mkfs /dev/sdb2
+   87  ls /mnt
+   88  vi /etc/fs
+   89  vi /etc/fstab
+   90  ls
+   91  cd CIT173_Lab4/
+   92  cd ..
+   93  cd CIT173_Lab4/
+   94  ls
+   95  cd ..
+   96  mkdir /mnt/data
+   97  sudo mkdir /mnt/data
+   98  sudo mkdir /mnt/backup
+   99  mount /mnt/data
+  100  ls -a
+  101  cd ~/CIT173_Lab4/
+  102  ls -a
+  103  man mount
+  104  mount -t /mnt
+  105  mount -t /mnt/backup
+  106  mount -l
+  107  mount -l /mnt/data /mnt/backup
+  108  sudo mount -l /mnt/data /mnt/backup
+  109  sudo mount -l /mnt/data 
+  110  man mount
+  111  ls mount
+  112  mount -l
+  113  sudo apt-get update
+  114  sudo get-apt update
+  115  sudo apt-get upgrade
+  116  mountls
+  117  mount -l
+  118  mount -l |less
+  119  man mount
+  120  ls
+  121  cd CIT173_Lab4
+  122  ls
+  123  mount -l > ~/CIT173_Lab4/my-disk-usage.txt
+  124  df
+  125  cd /
+  126  ls
+  127  ls mnt
+  128  ls etc
+  129  cd ..
+  130  cd ~/
+  131  cd CIT173_Lab4
+  132  ls
+  133  umount /dev/sdb1
+  134  mount /dev/sdb1
+  135  ls mnt
+  136  ls mount
+  137  ls etc
+  138  ls --all
+  139  ls /mnt
+  140  df
+  141  mount -l -t ext4
+  142  mount -t /dev/mnt/ /mnt/data/
+  143  sudo mount -t /dev/mnt/ /mnt/data/
+  144  ls etc
+  145  ls /etc
+  146  cd CIT173_Lab4
+  147  ls /dev
+  148  man ls
+  149  mkfs
+  150  mount /mnt/data
+  151  ls -a
+  152  ls -a CIT173_Lab4/
+  153  ls /mnt/data
+  154  mount -t mnt/data/ dev/sdb1/
+  155  sudo mount -t mnt/data/ dev/sdb1/
+  156  ls /etc
+  157  mkfs /mnt/data
+  158  fdisk /dev/sdb
+  159  sudo fdisk /dev/sdb
+  160  sudo fdisk
+  161  cd CIT173_Lab4/
+  162  ls
+  163  sudo fdisk -l
+  164  mkfs ext4 /dev/sdb1
+  165  man mkfs
+  166  gdisk
+  167  sudo gdisk
+  168  sudo mkfs ext4 /dev/sdb1
+  169  man mkfs
+  170  sudo gdisk /dev/sdb1
+  171  sudo mkfs ext4 /dev/sdb1
+  172  sudo gdisk /dev/sdb1
+  173  sudo mkfs ext4 /dev/sdb1
+  174  sudo gdisk /dev/sdb1
+  175  sudo fdisk /dev/sdb1
+  176  sudo mkfs ext4 /dev/sdb1
+  177  man mkfs
+  178  mkfs.ext4 ext4 /dev/sdb1
+  179  mkfs.ext4 /dev/sdb1
+  180  sudo mkfs.ext4 /dev/sdb1
+  181  man mkfs
+  182  sudo mkfs.ext4 /dev/sdb2
+  183  /dev
+  184  /dev -l
+  185  ls /dev
+  186  man ls
+  187  ls -a /dev > my-new-dev.nodes.txt
+  188  mount /dev/sdb1 /mnt/data
+  189  sudo mount /dev/sdb1 /mnt/data
+  190  su
+  191  sudo mount -v /dev/sdb1 /mnt/data
+  192  sudo mount -v /dev/sdb2 /mnt/backup
+  193  mount -l
+  194  mount > ~/CIT173_Lab4/my-mounts.txt
+  195  ls ~/CIT173_Lab4/my-mounts.txt 
+  196  df
+  197  df > ~/CIT173_Lab4/my-disk-usage.txt
+  198  sudo umount -v /dev/sdb1 
+  199  sudo umount -v /dev/sdb2 
+  200  sudo dd if=/dev/sdb of=~/CIT173_Lab4/gpt.bin bs=512 count=34
+  201  cd ~/
+  202  cd ~/CIT173_Lab4
+  203  git init 
+  204  git remote add origin https://github.com/jlm52572/CIT173_Lab4.git
+  205  git add --all
+  206  git commit -m 'work'
+  207  git push origin master
+  208  rm -rf .git
+  209  git init
+  210  git remote add origin https://github.com/jlm52572/CIT173_Lab4.git
+  211  git add --all
+  212  git commit -m "Lab 4"
+  213  git push origin master
+  214  git remote set-url origin https://github.com/jlm52572/CIT173Lab4.git
+  215  git push origin master
+  216  sudo apt-get update
+  217  man apt
+  218  man get
+  219  man man
+  220  get update
+  221  sudo apt-git update
+  222  ps
+  223  top
+  224  /dev/null
+  225  sudo /dev/null
+  226  mkdir CIT173_Lab5
+  227  ls uuid
+  228  sudo apt-get gedit 
+  229  sudo apt-get gedit
+  230  yum install gedit
+  231  sudo yum install gedit
+  232  sudo -E gedit /etc/fstab
+  233  cd /mnt/data/
+  234  ls
+  235  cd /mnt/backup/
+  236  ls
+  237  mountls
+  238  modls
+  239  ls -a mount
+  240  /proc/mount/
+  241  mount -l
+  242  mount -l > ~/CIT173_Lab5/my-mounts.txt
+  243  ls ~/CIT173_Lab5/my-mounts.txt 
+  244  cp /etc/fstab > ~/CIT173_Lab5/my-fstab.txt 
+  245  cp /etc/fstab
+  246  cp /etc/fstab | ~/CIT173_Lab5/my-fstab.txt
+  247  cp --help
+  248  cp /etc/fstab -a ~/CIT173_Lab5/my-fstab.txt
+  249  ls ~/CIT173_Lab5/
+  250  ls -a ~/CIT173_Lab5/my-fstab.txt 
+  251  cd /mnt/data
+  252  data_file1.dat
+  253  echo "data_file1" > data_file1.dat
+  254  sudo echo "data_file1" > data_file1.dat
+  255  echo "data_file1" 
+  256  echo "data_file2" 
+  257  cd ..
+  258  cd /mnt/backup
+  259  echo "backup_file1" 
+  260  echo "backup_file2" 
+  261  ls -a
+  262  cd /mnt/data
+  263  ls
+  264  ls -a .
+  265  cd /
+  266  ls -l
+  267  ls -a
+  268  ls -a mnt
+  269  ls -a mnt/data
+  270  cd mnt
+  271  ls-l
+  272  man mnt
+  273  man ls
+  274  cd mnt/data
+  275  cd /mnt/data
+  276  ls
+  277  echo data_file1.dat
+  278  echo data_file2.dat
+  279  ls
+  280  cd desktop
+  281  cd /
+  282  ls
+  283  cd Documents/
+  284  echo data_file1.dat
+  285  echo data_file2.dat
+  286  ls
+  287  ls CIT173_Lab5
+  288  mountls
+  289  ls CIT173_Lab5
+  290  yum install gedit
+  291  sudo yum install gedit
+  292  gedit
+  293  cd /mnt/data
+  294  gedit
+  295  df -m
+  296  cd /mnt/data
+  297  ls -al
+  298  cd /
+  299  find / -name data_file* -print | more
+  300  sudo su
+  301  cd /dev/sdb1
+  302  cd /mnt/data
+  303  man dd
+  304  cd /dev
+  305  ls -l
+  306  ls -l r*
+  307  less random
+  308  more random
+  309  cd /mnt/data
+  310  touch data_file1.dat
+  311  Sudo -u touch data_file1.dat
+  312  sudo -u touch data_file1.dat
+  313  vi data_file1.dat
+  314  ls -l
+  315  dd if=/dev/random of=/mnt/data/data_file1.dat
+  316  sudo -u dd if=/dev/random of=/mnt/data/data_file1.dat
+  317  sudo dd if=/dev/random of=/mnt/data/data_file1.dat
+  318  ls -l
+  319  vi data_file1.dat
+  320  ls -l
+  321  cp -p data_file1.dat data_file2.dat
+  322  ls -l
+  323  sudo dd if=/dev/random of=/mnt/data/data_file2.dat
+  324  ls -l
+  325  cd /mnt/backup
+  326  sudo dd if=/dev/random of=/mnt/backup/backup_file1.dat
+  327  sudo dd if=/dev/random of=/mnt/backup/backup_file2.dat
+  328  cd /mnt/data
+  329  rm data_file1.dat
+  330  sudo rm data_file1.dat
+  331  ls-l
+  332  ls -l
+  333  sudo dd if=/dev/random of=/mnt/data/data_file1.dat
+  334  shutdown
+  335  cd CIT173_Lab
+  336  cd CIT173_Lab5
+  337  ls
+  338  cd /mnt
+  339  ls
+  340  rm data
+  341  sudo dd if=/dev/random of=/mnt/data/data_file3.txt bs=1 count=1k
+  342  sudo dd if=/dev/random of=/mnt/data/data_file4.txt bs=1 count=1k
+  343  sudo dd if=/dev/random of=/mnt/backup/backup_file3.txt bs=1 count=1k
+  344  sudo dd if=/dev/random of=/mnt/backup/backup_file4.txt bs=1 count=1k
+  345  rm data_file1.txt
+  346  cp /mnt/data/data_file3.txt ~/CIT173_Lab5
+  347  cp /mnt/data/data_file4.txt ~/CIT173_Lab5
+  348  cp /mnt/backup/backup_file4.txt ~/CIT173_Lab5
+  349  cp /mnt/backup/backup_file3.txt ~/CIT173_Lab5
+  350  cd /mnt
+  351  ls
+  352  rm data_file1.txt
+  353  cd data
+  354  ls
+  355  rm data_file1.txt data_file2.txt
+  356  ls
+  357  sudo rm data_file3.txt 
+  358  sudo rm data_file1.txt data_file2.txt
+  359  ls
+  360  sudo rm data_file1.dat data_file2.dat
+  361  ls
+  362  cd /backup
+  363  cd /mnt/backup
+  364  ls
+  365  sudo rm backup_file1.dat backup_file2.dat
+  366  ls
+  367  mv backup_file3.dat backup_file1.dat
+  368  sudo mv backup_file3.dat backup_file1.dat
+  369  ls
+  370  rm backup_file3.txt backup_file4.txt
+  371  sudo rm backup_file3.txt backup_file4.txt
+  372  ls
+  373  sudo dd if=/dev/random of=/mnt/backup/backup_file4.dat bs=1 count=1k
+  374  sudo dd if=/dev/random of=/mnt/backup/backup_file1.dat bs=1 count=1k
+  375  ls
+  376  rm backup_4.dat
+  377  sudo rm backup_4.dat
+  378  mv backup_file4.dat backup_file2.dat
+  379  sudo mv backup_file4.dat backup_file2.dat
+  380  ls
+  381  cd /mnt/data
+  382  ls
+  383  mv data_file3.txt data_file1.dat
+  384  sudo mv data_file3.txt data_file1.dat
+  385  ls
+  386  sudo mv data_file4.txt data_file2.dat
+  387  ls
+  388  cp data_file* > ~/CIT173_Lab5
+  389  cd /mnt/data
+  390  ls
+  391  cp data_file1.dat ~/CIT173_Lab5
+  392  cp data_file2.dat ~/CIT173_Lab5
+  393  cd /mnt/backup
+  394  cp backup_file1.dat ~/CIT173_Lab5
+  395  cp backup_file2.dat ~/CIT173_Lab5
+  396  cd ..
+  397  ls
+  398  cd ~/CIT173_Lab5
+  399  ls
+  400  rm data_file1.txt
+  401  sudo rm data_file1.txt
+  402  ls
+  403  sudo rm data_file3.txt
+  404  sudo rm data_file4.txt
+  405  ls
+  406  sudo rm backup_file4.txt
+  407  sudo rm backup_file3.txt
+  408  ls
+  409  cd ..
+  410  df
+  411  df > ~/CIT173_Lab5
+  412  df > ~/CIT173_Lab5/my-disk-usage.txt
+  413  ls
+  414  cd CIT173_Lab5
+  415  ls
+  416  ls -a my-disk-usage.txt 
+  417  cd my-disk-usage.txt
+  418  df
+  419  cd ..
+  420  cd CIT173_Lab5
+  421  my-procfs.txt
+  422  ls
+  423  procfs -a
+  424  procfs 
+  425  ls procfs
+  426  ls /procfs
+  427  sudo ls /procfs
+  428  sudo ls /proc
+  429  cd ..
+  430  sudo ls /proc
+  431  ls
+  432  sudo ls /proc
+  433  cat /proc/kcore
+  434  sudo cat /proc/kcore
+  435  sudo cat /proc/version > ~/CIT173_Lab5/my-procfs.txt
+  436  sudo cat /proc/' >> ~/CIT173_Lab5/my-procfs.txt
+  437  sudo cat /proc/memory > ~/CIT173_Lab5/my-procfs.txt
+  438  sudo cat /proc/model > ~/CIT173_Lab5/my-procfs.txt
+  439  ps
+  440  cd ..
+  441  ps
+  442  cat /proc/cpuinfo
+  443  cat /proc/cpuinfo > ~/CIT173_Lab5/my-procfs.txt 
+  444  cat uname
+  445  sudo cat uname
+  446  sudo cat /proc/uname
+  447  cat /proc/mem
+  448  sudo cat /proc/mem
+  449  cat /proc/meminfo
+  450  cat /proc/meminfo > ~/CIT173_Lab5/my-procfs.txt 
+  451  grep -A 1 stack /proc/pid/smaps
+  452  sudo grep -A 1 stack /proc/pid/smaps
+  453  sudo cat /proc/loadavg
+  454  sudo cat /proc/loadavg > ~/CIT173_Lab5/my-procfs.txt 
+  455  cat /proc/dbus-daemon
+  456  sudo cat /proc/dbus-daemon
+  457  ls dbus-daemon
+  458  ps
+  459  ps -ef
+  460  cat /proc/uptime
+  461  cat /proc/uptime > ~/CIT173_Lab5/my-procfs.txt 
+  462  cat /proc/fb > ~/CIT173_Lab5/my-procfs.txt 
+  463  ls
+  464  man sysfs
+  465  ps
+  466  sudo cat /proc/2992/mem
+  467  sudo cat /proc/2992/limits > ~/CIT173_Lab5/my-procfs.txt 
+  468  sudo -i
+  469  ls history
+  470  sudo -i
+  471  ls
+  472  cd CIT173_Lab5
+  473  ls
+  474  cd 
+  475  ls history
+  476  sudo -i
+  477  history > ~/CIT173_Lab5/my-command-history.txt
+  478  ls history
+  479  gedit
+  480  man dbus
+  481  man dbus-daemon
+  482  cd ~/CIT173_Lab5/
+  483  git init
+  484  git remote add origin https://github.com/jlm52572/CIT173_Lab5.git
+  485  git add --all
+  486  git commit -m "hope it works"
+  487  git config --global --edit
+  488  cd ~/CIT173_Lab5
+  489  git init
+  490  git remote add origin https://github.com/jlm52572/CIT173_Lab5.git
+  491  git add --all
+  492  git commit -m "hope it works"
+  493  git push origin master
+  494  yum install nmap
+  495  sudo yum install nmap
+  496  sudo yum install wireshark
+  497  sudo yum install angryip
+  498  wireshark 
+  499  nmap
+  500  cat /proc/cpuinfo
+  501  cat /proc/cpuinfo |less
+  502  locate startx
+  503  whereis startx
+  504  find /user -name startx
+  505  sudo find /user -name startx
+  506  sudo yum install update
+  507  sudo yum install upgrade
+  508  man ==help
+  509  man --help
+  510  ls -a
+  511  cd .pki
+  512  cd .
+  513  cd ..
+  514  ls fstab
+  515  sudo apt-get update
+  516  get-apt update
+  517  sudo apt-get update
+  518  sudo apt-get upgrafde
+  519  yum update
+  520  sudo yum update
+  521  sudo yum upgrade
+  522  exit
+  523  ls -l
+  524  Downloads/
+  525  cd Downloads/
+  526  ls
+  527  mkdir CIT173_Lab6
+  528  sudo groupadd actors
+  529  ls
+  530  ls -l
+  531  sudo groupadd directors
+  532  sudo groupadd producers
+  533  man group
+  534  ls /group
+  535  man group
+  536  ls /etc/group
+  537  ls l- /etc/group
+  538  sudo ls -l /etc/group
+  539  man user group
+  540  cd /etc/group
+  541  sudo cd /etc/group
+  542  cat /etc/group
+  543  man useradd
+  544  wget https://github.com/RenoTechnologyAcademy/CIT173_Lab6_Files/archive/master.tar.gz
+  545  sudo adduser -m Mark Hamill 
+  546  man usermod
+  547  sudo usermod -g actors Mark Hamill
+  548  history CIT173_Lab5
+  549  ls history CIT173_Lab5
+  550  man -iname
+  551  find Mark Hamill
+  552  ls -l
+  553  cd CIT173_Lab6
+  554  ls -l
+  555  cd /etc/user
+  556  ls /etc/user
+  557  sudo ls /etc/user
+  558  sudo useradd -m mhamill
+  559  sudo passwd mhamill 
+  560  sudo usermod -c "Mark Hamill" mhamill
+  561  sudo usermod -a -G mhamill
+  562  sudo usermod -a -G actors mhamill
+  563  sudo useradd -m hford
+  564  sudo passwd hford
+  565  sudo usermod -c "Harrison Ford" hford
+  566  sudo usermod -a -G actors hford
+  567  sudo useradd -m cfisher
+  568  sudo passwd cfisher
+  569  sudo usermod -c "Carrie Fisher" cfisher
+  570  sudo usermod -a -G actors cfisher
+  571  sudo useradd -m glucas
+  572  sudo passwd glucas
+  573  sudo usermod -c "George Lucas" glucas
+  574  sudo usermod -a -G director, producers glucas
+  575  sudo usermod -a -G directors, producers glucas
+  576  sudo usermod -a -G directors glucas
+  577  sudo usermod -a -G producers glucas
+  578  sudo useradd -m gkurtz
+  579  sudo passwd gkurtz
+  580  sudo usermod -c "Gary Kurtz" gkurtz
+  581  sudo usermod -a -G producers gkurtz
+  582  cp /etc/passwd ~/CIT173_Lab6
+  583  cp /etc/groups ~/CIT173_Lab6
+  584  cp /etc/group ~/CIT173_Lab6
+  585  history > ~/CIT173_Lab6/ex1-comannd-history.txt
